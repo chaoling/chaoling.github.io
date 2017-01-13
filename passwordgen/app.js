@@ -6,7 +6,9 @@
   PasswordController.$inject = ['$scope'];
 
   function PasswordController($scope) {
-    $scope.datetime="";
+    var d = new Date();
+    $scope.datetime=("0"+d.getFullYear()).slice(-2)+":"+("0"+(d.getMonth()+1)).slice(-2)+":"+("0"+d.getDate()).slice(-2)+":"+("0"+d.getHours()).slice(-2)+":"+("0"+d.getMinutes()).slice(-2)+":"+
+			("0"+d.getSeconds()).slice(-2);
     $scope.serialnum="";
     $scope.message = "";
     $scope.genPassword = function () {

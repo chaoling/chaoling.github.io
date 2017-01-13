@@ -1,3 +1,7 @@
+* {
+
+}
+
 body {
   max-width: 750px;
   margin: 0 auto;
@@ -23,7 +27,7 @@ h1 {
 }
 .message
 {
-  font-size: 1.3em; font-weight: bold;
+  font-size: 2em; font-weight: bold;
 }
 #idt, #isn
 {
