@@ -1,0 +1,54 @@
+body {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 1em;
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.4em;
+  background: #7a180f;
+  color: #fff;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+a {
+  color: orange;
+  text-decoration: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+h1 {
+  line-height: 1em;
+}
+.message
+{
+  font-size: 1.3em; font-weight: bold;
+}
+#idt, #isn
+{
+  font-size: 1.5em;
+  margin: 20px 0;
+}
+input {
+  display: inline-block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  margin: 0 0 10px;
+}
+
+@media (min-width: 481px) {
+  .navigation {
+    list-style: none;
+    padding: 0;
+  }
+  .navigation li {
+    display: inline-block;
+  }
+  .navigation li:not(:first-child):before {
+    content: '| ';
+  }
+}
