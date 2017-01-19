@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Password Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <script src = "angular.min.js"></script>
+  <script src = "md5.js"></script>
+  <script src = "app.js"></script>
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/app.css">
+</head>
+<body ng-app="PasswordGen">
+  <div class="container" ng-controller="PasswordController">
+    <h1> SY-910 Super Password Gem </h1>
+    <!--form id="datetimecode" class = "input" method="post" title="DateTimeString"-->
+    <div class="form-group">
+      <span id=idt>Date Time:</span><br>
+      <input id="datetimestr" type="text"
+      placeholder="please enter the date time string"
+      class="form-control" ng-model="datetime">
+    </div>
+    <div class="form-group">
+     <span id=isn>Serial Number:</span><br>
+     <input id="sn" type="text"
+     placeholder="Please enter the serial number"
+     class="form-control" ng-model="serialnum">
+   </div>
+   <div class="form-group">
+     <button class="btn btn-default"
+     ng-click="genPassword()" id="genBtn">Generate Password</button>
+   </div>
+     <!--/form-->
+     <div class="form-group message">
+       {{message}} <br>
+     </div>
+   </div>
+</body>
+</html>
