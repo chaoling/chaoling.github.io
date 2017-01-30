@@ -1,0 +1,17 @@
+<!--h3>Title: {{ $ctrl.myTitle }}</h3>
+<ul>
+  <li ng-repeat="item in $ctrl.items">
+    {{ item.id }}  {{ item.name }}
+    <button ng-click="$ctrl.remove($index);">Remove Item</button>
+  </li>
+</ul>
+<div class="error">NOTHING DETECTED!</div-->
+<div>
+<h3>Title: {{ tic.myTitle }}</h3>
+<ul>
+  <li ng-repeat="item in tic.items">
+    {{ item.short_name }}  {{ item.name }}
+    <button ng-click="tic.onRemove({index: $index});">Remove Item</button>
+  </li>
+</ul>
+</div>
